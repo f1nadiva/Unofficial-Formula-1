@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1 World 2026 | Nadiva</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Orbitron',sans-serif;scroll-behavior:smooth}
+body{background:#0a0a0a;color:white}
+#countdown{
+    padding:100px 20px;
+    text-align:center;
+    background:#111;
+}
+
+.countdown-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.time{
+    background:#1c1c1c;
+    padding:20px 25px;
+    border-radius:12px;
+    min-width:90px;
+    box-shadow:0 0 15px rgba(255,0,0,0.4);
+}
+
+.time span{
+    font-size:36px;
+    font-weight:bold;
+    color:#ff1e1e;
+}
+
+.time p{
+    margin-top:5px;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+.race-date{
+    margin-top:30px;
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* NAV */
+nav{
+position:fixed;top:0;width:100%;padding:15px 40px;
+background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);
+display:flex;justify-content:space-between;z-index:1000}
+nav a{color:white;text-decoration:none;margin-left:18px;font-size:13px}
+
+/* HERO */
+.hero{
+height:100vh;
+background:
+linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0.9)),
+url('hero.jpg') center/cover no-repeat;
+display:flex;align-items:center;justify-content:center;text-align:center}
+.hero h1{font-size:58px;color:#ff1e1e}
+
+/* SECTION */
+section{padding:100px 40px;text-align:center}
+h2{color:#ff1e1e;margin-bottom:35px;font-size:34px}
+
+/* GRID */
+.grid{display:flex;flex-wrap:wrap;gap:25px;justify-content:center}
+.card{
+width:240px;background:#111;border-radius:15px;
+overflow:hidden;transition:.4s;box-shadow:0 0 15px rgba(255,0,0,.2)}
+.card:hover{transform:translateY(-8px);box-shadow:0 0 30px rgba(255,0,0,.7)}
+.card img{width:100%;height:280px;object-fit:cover}
+.card h3{margin:12px 0 5px}
+.card p{font-size:13px;padding-bottom:15px}
+
+/* TEXT */
+.text{max-width:900px;margin:auto;line-height:1.8;font-size:15px}
+
+/* COUNTDOWN */
+#countdown{font-size:28px;color:#ff1e1e;margin-top:20px}
+
+/* PROFILE */
+.profile img{
+width:200px;border-radius:50%;
+border:5px solid #ff1e1e;
+box-shadow:0 0 25px #ff1e1e;margin-bottom:20px}
+
+/* FOOTER */
+footer{background:#000;padding:30px;text-align:center;font-size:14px}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div>F1 2026</div>
+<div>
+<a href="#drivers">Drivers</a>
+<a href="#teams">Teams</a>
+<a href="#history">History</a>
+<a href="#race">Next Race</a>
+<a href="#creator">Creator</a>
+</div>
+</nav>
+
+<div class="hero">
+<h1>FORMULA 1 WORLD 2026</h1>
+</div>
+
+<!-- DRIVERS -->
+<section id="drivers">
+<h2>Official Driver Line-Up 2026</h2>
+<div class="grid">
+
+<div class="card"><img src="leclerc.jpg"><h3>Charles Leclerc</h3><p>Ferrari</p></div>
+<div class="card"><img src="hamilton.jpg"><h3>Lewis Hamilton</h3><p>Ferrari</p></div>
+
+<div class="card"><img src="albon.jpg"><h3>Alex Albon</h3><p>Williams</p></div>
+<div class="card"><img src="sainz.jpg"><h3>Carlos Sainz</h3><p>Williams</p></div>
+
+<div class="card"><img src="verstappen.jpg"><h3>Max Verstappen</h3><p>Red Bull Racing</p></div>
+<div class="card"><img src="hadjar.jpg"><h3>Isack Hadjar</h3><p>Red Bull Racing</p></div>
+
+<div class="card"><img src="bottas.jpg"><h3>Valtteri Bottas</h3><p>Cadillac</p></div>
+<div class="card"><img src="perez.jpg"><h3>Sergio Perez</h3><p>Cadillac</p></div>
+
+<div class="card"><img src="antonelli.jpg"><h3>Kimi Antonelli</h3><p>Mercedes</p></div>
+<div class="card"><img src="russell.jpg"><h3>George Russell</h3><p>Mercedes</p></div>
+
+<div class="card"><img src="gasly.jpg"><h3>Pierre Gasly</h3><p>Alpine</p></div>
+<div class="card"><img src="colapinto.jpg"><h3>Franco Colapinto</h3><p>Alpine</p></div>
+
+<div class="card"><img src="alonso.jpg"><h3>Fernando Alonso</h3><p>Aston Martin</p></div>
+<div class="card"><img src="stroll.jpg"><h3>Lance Stroll</h3><p>Aston Martin</p></div>
+
+<div class="card"><img src="hulkenberg.jpg"><h3>Nico Hülkenberg</h3><p>audi</p></div>
+<div class="card"><img src="bortoleto.jpg"><h3>Gabriel Bortoleto</h3><p>Audi</p></div>
+
+<div class="card"><img src="lawson.jpg"><h3>Liam Lawson</h3><p>Visa RB</p></div>
+<div class="card"><img src="lindblad.jpg"><h3>Arvid Lindblad</h3><p>Visa RB</p></div>
+
+<div class="card"><img src="ocon.jpg"><h3>Esteban Ocon</h3><p>Haas</p></div>
+<div class="card"><img src="bearman.jpg"><h3>Ollie Bearman</h3><p>Haas</p></div>
+
+</div>
+</section>
+
+<!-- TEAMS -->
+<section id="teams">
+<h2>Teams of 2026</h2>
+<div class="text">
+Ferrari, Williams, Red Bull Racing, Cadillac, Mercedes, Alpine, Aston Martin, Visa RB, and Haas
+form the competitive grid of the 2026 Formula 1 season, blending historic powerhouses with rising talents
+and a new team, Cadillac & Audi.
+</div>
+</section>
+
+<!-- HISTORY -->
+<section id="history">
+<h2>History of Formula 1</h2>
+<div class="text">
+Since 1950, Formula 1 has represented the highest level of motorsport, combining engineering excellence,
+driver skill, and relentless innovation. From Fangio and Senna to Schumacher, Hamilton, and Verstappen,
+each era defines new limits of speed.
+</div>
+</section>
+
+<!-- COUNTDOWN -->
+<section id="countdown">
+  <h2>Next Grand Prix Countdown</h2>
+  <div class="countdown-box">
+    <div class="time">
+      <span id="days">00</span>
+      <p>Days</p>
+    </div>
+    <div class="time">
+      <span id="hours">00</span>
+      <p>Hours</p>
+    </div>
+    <div class="time">
+      <span id="minutes">00</span>
+      <p>Minutes</p>
+    </div>
+    <div class="time">
+      <span id="seconds">00</span>
+      <p>Seconds</p>
+    </div>
+  </div>
+
+  <p class="race-date">
+    Next Race: <strong>Australian Grand Prix</strong><br>
+    March 06, 2026
+  </p>
+</section>
+
+<!-- CREATOR -->
+<section id="creator" class="profile">
+<h2>The Creator</h2>
+<img src="profile.jpg">
+<div class="text">
+This website was created by Nadiva, a Grade 9 student and passionate Formula 1 fan,
+combining creativity, technology, and love for motorsport.
+</div>
+</section>
+
+<footer>
+F1 World 2026 • Created by Nadiva
+<script>
+const raceDate = new Date("March 06, 2026 13:00:00").getTime();
+
+const timer = setInterval(function(){
+    const now = new Date().getTime();
+    const gap = raceDate - now;
+
+    const days = Math.floor(gap / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((gap % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+},1000);
+</script>
+
+</body>
+</html>
